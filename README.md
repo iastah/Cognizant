@@ -1,4 +1,4 @@
 # Cognizant2
-Allen Tsai 
-Dennis Hernandez
+Allen Tsai, 
+Dennis Hernandez,
 Jorge Inostroza
