@@ -14,14 +14,4 @@ public class CalculateApplication {
 		SpringApplication.run(CalculateApplication.class, args);
 	}
 
-//	@Configuration
-//	class RestTemplateConfig {
-//		
-//		// Create a bean for restTemplate to call services
-//		@Bean
-//		@LoadBalanced		// Load balance between service instances running at different ports.
-//		public RestTemplate restTemplate() {
-//		    return new RestTemplate();
-//		}
-//	}
 }

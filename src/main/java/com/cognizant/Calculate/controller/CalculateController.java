@@ -14,7 +14,7 @@ import com.cognizant.Calculate.service.CalculateService;
 @RestController
 @RequestMapping("/calories/calculate")
 public class CalculateController {
-	
+
 	@Autowired
 	CalculateService cs;
 
@@ -22,16 +22,12 @@ public class CalculateController {
 	public String ping() {
 		return "pong";
 	}
-	
-//	@GetMapping("/{typeName}")
-//	public CalcDTO greeting(@PathVariable String typeName, @RequestParam(value = "gender", defaultValue = "M") String gender,
-//			@RequestParam(value = "duration", defaultValue = "10") String duration) {
-//		return service;
-//	}
+
 	@GetMapping("/{typeName}")
-	public CalcDTO getCaloriesBurned(@PathVariable String typeName, @RequestParam(value = "gender", defaultValue = "M") String gender,
+	public CalcDTO getCaloriesBurned(@PathVariable String typeName,
+			@RequestParam(value = "gender", defaultValue = "M") String gender,
 			@RequestParam(value = "duration", defaultValue = "10") String duration) {
-			CalcDTO re= cs.getCalculation(typeName, gender, Long.valueOf(duration));
-			return re;
+		CalcDTO re = cs.getCalculation(typeName, gender, Long.valueOf(duration));
+		return re;
 	}
 }
