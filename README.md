@@ -1,4 +1,4 @@
-# Cognizant2
+# Calculate Microservice
 Allen Tsai, 
 Dennis Hernandez,
 Jorge Inostroza
